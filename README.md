@@ -7,7 +7,7 @@
 #### crawl.py:
 ##### a web crawler script, executed as 'python crawl.py \<some string\>' that writes to a uniquely named text file all of the urls containing your string, as well as the number of instances of that string on each of those urls
 
-#Usage: 
+# Usage: 
 #### Create a virtual environment using python 3.6
 `virtualenv --python=python3.6 myvenv`
 
