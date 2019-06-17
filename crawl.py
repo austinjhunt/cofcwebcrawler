@@ -44,6 +44,8 @@ def gen_filename(string):
 	
 
 if __name__ == "__main__": 
+	spinner = Halo(text='Loading', spinner='dots')
+	spinner.start()
 	string = sys.argv[1]
 	gs = GlobalSearcher(string)	
 	gs.drive()
@@ -54,3 +56,4 @@ if __name__ == "__main__":
 	with open(filename,'w+') as f: 
 		for line in fsl: 
 			f.write(line + '\n')
+	spinner.stop()
