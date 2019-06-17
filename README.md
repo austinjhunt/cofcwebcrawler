@@ -3,7 +3,7 @@ finalurls.txt: the final collection of hrefs/links built by the build_urls_list.
 build_url_list.py: script for using an initial url list (allurls.txt) to build/collect a full list of hrefs found on those urls, without duplicates
 crawl.py: a web crawler script, executed as 'python crawl.py <some string>' that writes to a uniquely named text file all of the urls containing your string, as well as the number of instances of that string on each of those urls
 
-### Usage: 
+#Usage: 
 #### Create a virtual environment using python 3.6
 `virtualenv --python=python3.6 myvenv`
 
@@ -15,4 +15,5 @@ crawl.py: a web crawler script, executed as 'python crawl.py <some string>' that
 
 #### Run the crawl script with your query. 
 `python crawl.py blogs.cofc.edu/scs`
+
 
