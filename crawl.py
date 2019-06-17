@@ -47,11 +47,10 @@ if __name__ == "__main__":
 	string = sys.argv[1]
 	gs = GlobalSearcher(string)	
 	gs.drive()
-	print("Writing results of search to file: search_results.txt'")
 	fsl = gs.get_found_string_locations()
-	
 	# write search results to an appropriately named file based on query
 	filename = "search_results_" + gen_filename(string) + ".txt"
+	print("Writing results of search to file: " + filename)
 	with open(filename,'w+') as f: 
 		for line in fsl: 
 			f.write(line + '\n')
